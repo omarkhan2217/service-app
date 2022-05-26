@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d6f36acf.css",
+    "main.js": "/static/js/main.98aa0af5.js",
+    "static/media/mainImg.jpg": "/static/media/mainImg.4c55b14bccf716eab975.jpg",
+    "static/media/mainImg2.jpg": "/static/media/mainImg2.f294594470f644883ace.jpg",
+    "static/media/mainImg4.jpg": "/static/media/mainImg4.dee9ec09d0fe14240b6f.jpg",
+    "static/media/serviceImg.jpg": "/static/media/serviceImg.099f2f2199ca3d7bc107.jpg",
+    "static/media/customer+service+management_hero.jpg": "/static/media/customer+service+management_hero.0a3808072b62a04158bb.jpg",
+    "static/media/mainImg3.jpg": "/static/media/mainImg3.0ddc09608a572e6994a1.jpg",
+    "static/media/handyman.webp": "/static/media/handyman.6fcf471e0b1d0e04afe2.webp",
+    "static/media/long_paint_stroke_2.svg": "/static/media/long_paint_stroke_2.9a8ec8e7a21963bcb1c7b0b2b9c5dd28.svg",
+    "static/media/omanFlag.webp": "/static/media/omanFlag.8970f627fd7de8cadad3.webp",
+    "static/media/longStroke.svg": "/static/media/longStroke.3d391e880527dc4528f0a62ceaa9cb0e.svg",
+    "static/media/handyman.svg": "/static/media/handyman.978e7e47bec3a2411ea06c8a775d5b52.svg",
+    "static/media/carpenter.svg": "/static/media/carpenter.5f4816a916995e3386cce2070cfc7bd0.svg",
+    "static/media/painter.svg": "/static/media/painter.682a530b215a41b96d5bd0f480b58fe2.svg",
+    "index.html": "/index.html",
+    "static/media/ukFlag.webp": "/static/media/ukFlag.4c8072a2dd944cc9d1c0.webp",
+    "static/media/smallStroke.svg": "/static/media/smallStroke.a60a2cf692fcc49410c66ceaae59e655.svg",
+    "static/media/plumber.svg": "/static/media/plumber.9cd38c4cade71ec1f3361f09c6fa595f.svg",
+    "main.d6f36acf.css.map": "/static/css/main.d6f36acf.css.map",
+    "main.98aa0af5.js.map": "/static/js/main.98aa0af5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f36acf.css",
+    "static/js/main.98aa0af5.js"
+  ]
+}
