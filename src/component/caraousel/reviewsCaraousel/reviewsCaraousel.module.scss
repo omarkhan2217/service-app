@@ -1,0 +1,80 @@
+@import "../../../assets/css/global.scss";
+
+.swiperWrapper {
+  width: 100%;
+  overflow: hidden;
+  @include flex-center-columns;
+}
+.img {
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+}
+.swiperContentWrapper {
+  @include flex-center;
+  gap: 100px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 30px 0 50px;
+}
+.contentWrapper {
+  @include flex-center-columns;
+}
+.info {
+  color: $white;
+  font-size: 27px;
+  width: 27ch;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.name {
+  color: $white;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  margin: 50px 0 20px;
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+  font-family: "Anybody";
+}
+.designation {
+  color: $white;
+  font-size: 22px;
+  text-align: left;
+  width: 100%;
+  font-weight: 200;
+  font-family: "Anybody";
+}
+.carouselArrow {
+  color: lighten($white, 5%);
+  font-size: 50px;
+  &:hover {
+    cursor: pointer;
+    color: darken($white, 5%);
+  }
+}
+
+.arrowMainWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.arrowWrapper {
+  @include flex-center;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
+.arrowDisabled {
+  color: darken($white, 40%);
+  cursor: not-allowed;
+  &:hover {
+    color: darken($white, 35%);
+    cursor: not-allowed;
+  }
+}

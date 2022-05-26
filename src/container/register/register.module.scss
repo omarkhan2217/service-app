@@ -1,0 +1,11 @@
+@import "../../assets/css/global.scss";
+
+.container {
+  background: url(../../assets/images/login/customer+service+management_hero.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include flex-center-columns;
+}

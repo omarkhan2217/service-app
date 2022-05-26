@@ -1,0 +1,52 @@
+@import "../../assets/css/global.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: $white;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  width: 100%;
+  padding: 12px 8px;
+  background-color: $greyLight;
+  margin-bottom: 40px;
+}
+
+.navItems {
+  display: flex;
+  color: $secondary;
+  font-size: 16px;
+  font-weight: 400;
+  transition: $linear;
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+    transition: $linear;
+  }
+}
+
+.icon {
+  margin-left: 8px;
+  margin-top: 1px;
+}
+
+.header {
+  font-size: 38px;
+  font-weight: 600;
+  color: $black;
+  margin: 20px 0px;
+}
+
+.newsCardContainer {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 80px;
+}

@@ -1,0 +1,29 @@
+@import "../../../assets/css/global.scss";
+
+.container {
+  @include flex-center-columns;
+  padding: 20px 0 20px;
+  //   background: url("../../../assets/images/background/ripple_top.svg");
+  //   background-repeat: repeat-y;
+  //   background-size: 30% 50%;
+  //   background-position: -33vh 20vw;
+  //   background-blend-mode: screen;
+  //   background-attachment: fixed;
+  background-color: $primary;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: $white;
+  @include flex-center;
+  gap: 15px;
+
+  & span {
+    @include box(150px, 5px);
+    background-color: $secondary;
+  }
+}
+.caraouselWrapper {
+  width: 80%;
+  margin: 50px 0 20px;
+}

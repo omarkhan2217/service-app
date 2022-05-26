@@ -1,0 +1,13 @@
+@import "../../../assets/css/global.scss";
+
+.container {
+  @include flex-center-columns;
+  padding: 50px 0;
+}
+.header {
+  font-size: 60px;
+  font-weight: 800;
+  color: $primary;
+  padding-top: 50px;
+  font-family: "Imbue";
+}

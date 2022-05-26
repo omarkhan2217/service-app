@@ -1,0 +1,79 @@
+@import "../../../assets/css/global.scss";
+
+.serviceContainer {
+  @include flex-center-columns;
+  padding: 100px 0 0;
+  background-color: $white;
+}
+.serviceHeader {
+  font-family: "Imbue", serif;
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;
+  color: $primary;
+}
+.serviceMainWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.serviceWrapper {
+  @include flex-center-columns;
+  border: 5px solid $secondary;
+  border-radius: 5px;
+  box-shadow: 8px 8px 0 rgba($secondary, 1);
+}
+.service {
+  font-size: 24px;
+  font-family: "Anybody";
+  color: $primary;
+  font-weight: 800;
+  background-color: $white;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: center;
+  position: relative;
+  top: 1px;
+  right: 0px;
+}
+.svgIcon {
+  width: 100%;
+  height: auto;
+}
+.svgLine {
+  padding: 100px 0 80px;
+}
+.serviceInfo {
+  font-size: 32px;
+  font-family: "Barlow";
+  color: $primary;
+  font-weight: 500;
+  & span {
+    font-weight: 300;
+    color: $secondary;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0 8px;
+  }
+}
+.serviceImageContainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0 0;
+}
+.serviceImage {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceInfoWrapper {
+  @include flex-center;
+  padding: 120px;
+  // background-color: $primary;
+}
