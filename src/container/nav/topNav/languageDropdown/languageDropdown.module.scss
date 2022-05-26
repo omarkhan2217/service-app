@@ -1,0 +1,30 @@
+@import "../../../../assets/css/global.scss";
+
+.listContainer {
+  padding: 5px 0px !important;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.items {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($secondary, 5%);
+    color: $white;
+  }
+}
+
+.flagIcon {
+  width: 28px;
+  height: 18px;
+  margin-right: 8px;
+  margin-top: 6px;
+}

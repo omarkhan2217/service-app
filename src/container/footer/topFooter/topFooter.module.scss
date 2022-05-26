@@ -1,0 +1,104 @@
+@import "../../../assets/css/global.scss";
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.3fr;
+  gap: 25px;
+}
+
+.img {
+  width: 120px;
+  height: 100px;
+}
+
+.customerContainer,
+.aboutContainer,
+.prosContainer,
+.contactUsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgContainer {
+  border-top: 1px solid $white;
+  padding: 30px 0 10px;
+}
+
+.applyContainer {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.termsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  color: $white;
+  font-family: "Anybody";
+  border-bottom: 1px solid $white;
+  padding-bottom: 5px;
+}
+
+.text {
+  font-size: 17px;
+  font-weight: 300;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.privacyText {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.textAlt {
+  font-size: 16px;
+  font-weight: 200;
+  color: $white;
+  width: 80%;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.button {
+  background-color: $secondary;
+  color: $white;
+  border: 2px solid $secondary;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 20px;
+  font-family: "Poppins";
+  transition: $ease;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+
+  &:hover {
+    @include light-hover;
+  }
+  &:active {
+    @include light-active;
+  }
+}

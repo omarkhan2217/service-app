@@ -1,0 +1,191 @@
+@import "./assets/css/global.scss";
+
+// body {
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+//     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+// Core Styling
+
+html,
+body {
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  @include box-sizing(inherit);
+}
+
+body {
+  font-family: "Barlow", sans-serif !important;
+  color: $black;
+  background-color: $white;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::-moz-selection {
+  /* for Firefox */
+  color: white;
+  background: $secondary;
+}
+
+::selection {
+  color: white;
+  background: $secondary;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+input {
+  caret-color: $primary;
+}
+input:focus {
+  border: 1px solid $secondary;
+  outline: 0;
+  box-shadow: 0 0 0.25em 0.05em rgba($secondary, 1);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  border: 2px solid $secondary;
+  -webkit-text-fill-color: $primary;
+  -webkit-box-shadow: inset 0 0 0px 1000px $info inset !important;
+  box-shadow: inset 0 0 0px 1000px $info inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  color: darken($greyLight, 10%);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ------- custom scrollbar ------------ */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  border-left: 2px solid darken($white, 7%);
+  border-right: 2px solid darken($white, 7%);
+  background-color: initial;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba($secondary, 0.6), rgba($secondary, 1));
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0px 0px 1000px 1000px rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb:active {
+  box-shadow: inset 0px 0px 1000px 1000px rgba(255, 255, 255, 0.1);
+}
+
+/*  To customize the sliding buttons*/
+
+::-webkit-scrollbar-button:single-button {
+  background-color: initial;
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  /* border-radius: 5px 5px 0 0; */
+  height: 16px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128 , 0.7)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128, 0.85)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(33, 130, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  /* border-radius: 0px 0px 5px 5px; */
+  height: 16px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128 , 0.7)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128, 0.85)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(33, 130, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+/* Left */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  /* border-radius: 5px 0px 0 5px; */
+  height: 12px;
+  width: 12px;
+  background-position: 3px 3px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128 , 0.7)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128, 0.85)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(33, 130, 128)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+/* Right */
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  /* border-radius: 0 5px 5px 0; */
+  height: 12px;
+  width: 12px;
+  background-position: 3px 3px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128 , 0.7)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(33, 130, 128, 0.85)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(33, 130, 128)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+/* ------- custom scrollbar ------------ */

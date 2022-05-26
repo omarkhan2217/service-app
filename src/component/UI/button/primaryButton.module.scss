@@ -1,0 +1,75 @@
+@import "../../../assets/css/global.scss";
+
+.button {
+  background-color: $secondary;
+  color: $white;
+  border: 2px solid $secondary;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 20px;
+  font-family: "Anybody";
+  transition: $ease;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  &:hover {
+    @include light-hover;
+  }
+  &:active {
+    @include light-active;
+  }
+}
+
+.smallButton {
+  background-color: $secondary;
+  color: $white;
+  border: 2px solid $secondary;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 20px;
+  font-family: "Anybody";
+  transition: $ease;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+
+  &:hover {
+    @include light-hover;
+  }
+  &:active {
+    @include light-active;
+  }
+}
+
+.searchButton {
+  background-color: $secondary;
+  color: $white;
+  border: 2px solid $secondary;
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px 20px;
+  transition: $ease;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  &:hover {
+    @include light-hover;
+  }
+  &:active {
+    @include light-active;
+  }
+}

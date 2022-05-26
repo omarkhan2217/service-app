@@ -1,0 +1,84 @@
+@import "../../../assets/css/global.scss";
+
+.container {
+  background: url(../../../assets/images/home/mainImg4.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header {
+  color: $white;
+  text-shadow: 1px 0px 5px $primary;
+  font-size: 100px;
+  font-family: "Imbue", serif;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+
+.searchWrapper {
+  width: 80%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  padding: 0 25px;
+  gap: 10px;
+  border-radius: 5px;
+}
+.search {
+  width: 75%;
+}
+.location {
+  width: 25%;
+}
+.searchBtn {
+  background-color: $secondary;
+  color: $white;
+  border: 2px solid $secondary;
+  border-radius: 5px;
+  height: 50px;
+  padding: 8px 20px;
+  font-family: "Poppins";
+  transition: $ease;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  &:hover {
+    @include light-hover;
+  }
+  &:active {
+    @include light-active;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border: 2px solid $white;
+  color: $black;
+  border-radius: 5px;
+  caret-color: $black;
+  padding-left: 10px;
+  font-size: 17px;
+
+  &::placeholder {
+    color: $black;
+  }
+}
